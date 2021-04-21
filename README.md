@@ -22,6 +22,7 @@ Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków p
 <h3>Zastosowane technologie oraz biblioteki: </h3>
 Architektura : MVVM
 <br>
+<br>
 <ul>
   <li>rxJava2, rxBinding, rxBus</li>
   <li>coroutines, flow</li>
