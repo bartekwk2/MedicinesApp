@@ -17,7 +17,7 @@ Po dodaniu leku aplikacja oblicza potrzebną ilość dawek oraz dzięki pobraniu
 Aplikacja umożliwia kontrolowanie leków znajomych. Samo dodanie znajomych odbywa się przy pomocy zeskanowania kodu QR znajomego. W momencie gdy znajomy jest dostępny dzięki zastosowaniu bibliotek skyway : do webRTC (zaimplementowana w javie konieczność była przepisania do kotlina), firebase-messaging oraz navigation (deep link) możliwy jest chat video ze znajomym. 
 <br>
 <br>
-Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków pozostałych w apteczce. Możliwa jest dzienna analiza ilości leków dzięki wykresowi. Pod wykresem wyświetlona jest informacja czy leków wystarczy, a jeśli nie to ile dawek w apteczce zabraknie. Gdy następuje pora dawkowania aplikacja wysyła użytkownikowi powiadomienia o tym jaki lek i w jakiej ilości jest do wzięcia.
+Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków pozostałych w apteczce. Możliwa jest dzienna analiza ilości leków dzięki wykresowi. Pod wykresem wyświetlona jest informacja czy leków wystarczy, a jeśli nie to ile dawek w apteczce zabraknie. Gdy następuje pora dawkowania aplikacja wysyła użytkownikowi powiadomienia o tym jaki lek i w jakiej ilości jest do wzięcia (periodic workManager, alarmManager)
 
 <h3>Zastosowane technologie oraz biblioteki: </h3>
 <ul>
@@ -28,7 +28,7 @@ Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków p
   <li>mlkit-text-recognition</li>
   <li>room, databinding, navigation, dataStore</li>
   <li>firebase-firestore, firebase-auth, firebase-storage, firebase-messaging,</li>
-  <li>workManager</li>
+  <li>workManager, alarmManager</li>
   <li>cameraX</li>
   <li>motionLayout, lottie</li>
   <li>awesomeQRCode</li>
@@ -56,4 +56,6 @@ Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków p
 
 </p>
 <br>
+<h3>Kontynuacja projektu: </h3>
+Naprwa bugów, rozbicie AppRepository na kilka repozytoriów, zastosowanie dependency injection (Hilt)
 
