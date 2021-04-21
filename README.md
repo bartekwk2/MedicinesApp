@@ -2,18 +2,22 @@
 
 <h3>O aplikacji: </h3>
 
-Aplikacja ma za zadanie monitorowanie ilości tabletek w domu.
+Aplikacja ma za zadanie monitorowanie dawkowania lekarstw.
+<br>
 <br>
 Można wprowadzić do bazy tabletki przez podanie przedziału dni, godzin dawkowania lub odstępu godzinowego (np. antybiotyki),nazwy lekarstwa oraz ilości pojedynczej dawki. Aplikacja umożliwia przeglądanie danych lekarstw na kalendarzu dniowym (różne lekarstwa) lub kalendarzu miesięcznym (jeden typ leku). Możliwe jest również monitorowanie pozostałej ilości lekarstw w domu. Leki dodać można również przez kontynuacje obecnego lekarstwa w bazie: (te same dane leku, data przeskalowana od nowego dnia). 
 <br>
+<br>
 Możliwa jest również opcja dodania przez skan recepty bądź eRecepty. Analizowany jest tekst przy pomocy biblioteki mlkit-text-recognition oraz wyrażeń regularnych w celu wyodrębnienia z recepty niezbędnych informacji o dawkowaniu. Algorytm wyodrębnienia danych został przetestowny dla 4 recept
+<br>
 <br>
 Po dodaniu leku aplikacja oblicza potrzebną ilość dawek oraz dzięki pobraniu danych metodą web scrapping (ze strony https://www.e-zikoapteka.pl) możliwe jest określenie potrzebnej ilości opakowań oraz ceny danego lekarstwa. 
 <br>
+<br>
 Aplikacja umożliwia kontrolowanie leków znajomych. Samo dodanie znajomych odbywa się przy pomocy zeskanowania kodu QR znajomego. W momencie gdy znajomy jest dostępny dzięki zastosowaniu bibliotek skyway : do webRTC (zaimplementowana w javie konieczność była przepisania do kotlina), firebase-messaging oraz navigation (deep link) możliwy jest chat video ze znajomym. 
 <br>
-Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków pozostałych w apteczce. Możliwa jest dzienna analiza ilości leków dzięki wykresowi, pod wykresem wyświetlona jest informacja czy leków wystarczy, a jeśli nie to ile dawek w apteczce zabraknie. Gdy następuje pora dawkowania aplikacja wysyła użytkownikowi powiadomienia o tym jaki lek i w jakiej ilości jest do wzięcia.
-
+<br>
+Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków pozostałych w apteczce. Możliwa jest dzienna analiza ilości leków dzięki wykresowi. Pod wykresem wyświetlona jest informacja czy leków wystarczy, a jeśli nie to ile dawek w apteczce zabraknie. Gdy następuje pora dawkowania aplikacja wysyła użytkownikowi powiadomienia o tym jaki lek i w jakiej ilości jest do wzięcia.
 
 <h3>Zastosowane technologie oraz biblioteki: </h3>
 <ul>
@@ -29,10 +33,13 @@ Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków p
   <li>motionLayout, lottie</li>
   <li>awesomeQRCode</li>
   <li>AAChartCore, CalendarView, MotionToast i inne ... </li>
-  
 </ul>
 
-<h3>Struktura bazy danych: </h3>
+<br>
+<p>Film z działania aplikacji : https://youtu.be/y2YXBkUNznI
+<br>
+
+<h3>Zdjęcia aplikacji </h3>
 <br>
 <p align="center">
    <img src="https://user-images.githubusercontent.com/77553097/115614909-8b6c9f80-a2ee-11eb-913e-8445802e76d8.png" width="200" title="hover text">
