@@ -20,6 +20,8 @@ Aplikacja umożliwia kontrolowanie leków znajomych. Samo dodanie znajomych odby
 Aplikacja na bieżąco pokazuje bieżący stan leków do wzięcia, oraz leków pozostałych w apteczce. Możliwa jest dzienna analiza ilości leków dzięki wykresowi. Pod wykresem wyświetlona jest informacja czy leków wystarczy, a jeśli nie to ile dawek w apteczce zabraknie. Gdy następuje pora dawkowania aplikacja wysyła użytkownikowi powiadomienia o tym jaki lek i w jakiej ilości jest do wzięcia (periodic workManager, alarmManager)
 
 <h3>Zastosowane technologie oraz biblioteki: </h3>
+Architektura : MVVM
+<br>
 <ul>
   <li>rxJava2, rxBinding, rxBus</li>
   <li>coroutines, flow</li>
