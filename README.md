@@ -27,6 +27,7 @@ Architektura : MVVM
   <li>rxJava2, rxBinding, rxBus</li>
   <li>coroutines, flow</li>
   <li>jsoup (web scrapping)</li>
+  <li>volley</li>
   <li>skyway (webRTC)</li>
   <li>mlkit-text-recognition</li>
   <li>room, databinding, navigation, dataStore</li>
